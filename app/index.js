@@ -1,4 +1,4 @@
-import teasim from 'teasim-core/lib/immutable';
+import teasim from 'teasim-core/immutable';
 import models from "./models";
 import pages from "./pages";
 

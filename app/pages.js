@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import { ConnectedRouter } from "react-router-redux";
-import IndexPage from "./IndexPage";
+import Home from "./Home";
 
 function Application({ history }) {
   return (
     <ConnectedRouter history={history}>
-      <Route path="/" exact component={IndexPage} />
+      <Route path="/" exact component={Home} />
     </ConnectedRouter>
   );
 }
