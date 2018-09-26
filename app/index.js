@@ -1,4 +1,3 @@
-import "@babel/polyfill";
 import teasim from 'teasim-core/lib/immutable';
 import models from "./models";
 import pages from "./pages";

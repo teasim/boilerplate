@@ -7,7 +7,7 @@ const TeasimBoilerplate = {
   dllPlugin: {
     defaults: {
       exclude: ["chalk", "compression", "cross-env", "express", "ip", "minimist"],
-      include: ["core-js", "eventsource-polyfill", "babel-polyfill"],
+      include: ["core-js", "eventsource-polyfill"],
       path: resolve("../node_modules/teasim-boilerplate-dlls")
     },
 

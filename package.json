@@ -236,9 +236,10 @@
     "redux-devtools-extension": "^2.13.5",
     "regenerator-runtime": "^0.12.1",
     "rimraf": "^2.6.2",
-    "serve-favicon": "^2.5.0",
     "style-loader": "^0.23.0",
     "stylelint-webpack-plugin": "^0.10.5",
+    "teasim-mockers": "^5.0.4-14",
+    "teasim-samples": "^5.0.4-14",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.1.1",
     "webpack": "^4.20.0",
@@ -248,10 +249,8 @@
     "webpack-hot-middleware": "^2.24.2"
   },
   "dependencies": {
-    "airbnb-js-shims": "^2.1.1",
     "core-js": "^2.5.6",
     "eventsource-polyfill": "^0.9.6",
-    "global": "^4.3.2",
     "immutable": "^3.8.2",
     "intl": "^1.2.5",
     "moment": "^2.21.0",
@@ -269,11 +268,8 @@
     "redux-logger": "^3.0.6",
     "redux-saga": "^0.16.0",
     "reselect": "^3.0.1",
-    "teasim": "^5.0.4-13",
-    "teasim-core": "^5.0.4-13",
-    "teasim-mockers": "^5.0.4-13",
-    "teasim-samples": "^5.0.4-13",
-    "whatwg-fetch": "^3.0.0"
+    "teasim": "^5.0.4-14",
+    "teasim-core": "^5.0.4-14.1"
   },
   "repository": {
     "type": "git",
