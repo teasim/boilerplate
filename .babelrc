@@ -1,0 +1,45 @@
+{
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "libraryDirectory": "lib",
+        "style": true
+      }
+    ],
+    "transform-export-default",
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "transform-function-bind",
+    "transform-react-remove-prop-types",
+    "transform-react-constant-elements",
+    "dynamic-import-node"
+  ],
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [
+            "last 2 versions",
+            "safari >= 7"
+          ],
+          "node": "current"
+        },
+        "include": [
+          "transform-es2015-arrow-functions",
+          "es6.map"
+        ],
+        "exclude": [
+          "transform-regenerator",
+          "es6.set"
+        ]
+      }
+    ],
+    "react",
+    "stage-0"
+  ],
+  "comments": false
+}
