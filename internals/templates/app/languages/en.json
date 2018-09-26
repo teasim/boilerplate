@@ -1,0 +1,6 @@
+{
+  "app.containers.common.lang.LanguageToggle.en": "English",
+  "app.containers.common.lang.LanguageToggle.zh": "简体中文",
+  "application.pages.home.HomePage.hello": "Hello",
+  "application.pages.home.HomePage.name": "My name is Teasim"
+}
