@@ -1,8 +1,6 @@
 import fackers from "teasim-fackers";
-import { delay } from "teasim-mockers";
+import { format } from "teasim-mockers";
 import { getProfileBasicData, getProfileAdvancedData } from "./profile";
-
-const noProxy = process.env.NO_PROXY === 'true';
 
 const proxy = {
   "GET /api/users": [
@@ -63,4 +61,4 @@ const proxy = {
   }
 };
 
-export default (noProxy ? {} : delay(proxy, 1000));
+module.exports = format(proxy);
