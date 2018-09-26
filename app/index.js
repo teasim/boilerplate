@@ -1,11 +1,20 @@
-import teasim from 'teasim-core/immutable';
-import models from "./models";
-import pages from "./pages";
+import teasim from 'teasim';
+import createLoading from "teasim-plugin-loading";
+import './index.less';
 
-const app = teasim();
+/* 1. Initialize */
+const app = teasim({
+  immutable: true
+});
 
-app.model(models);
+/* 2. Plugins */
+app.use(createLoading());
 
-app.install(pages);
+/* 3. Models */
+app.model(require("models").default);
 
+/* 4. Install */
+app.install(require("pages").default);
+
+/* 5. Mount */
 app.mount('#root');

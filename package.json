@@ -238,8 +238,8 @@
     "rimraf": "^2.6.2",
     "style-loader": "^0.23.0",
     "stylelint-webpack-plugin": "^0.10.5",
-    "teasim-mockers": "^5.0.4-15",
-    "teasim-samples": "^5.0.4-15",
+    "teasim-mockers": "^5.0.4-17",
+    "teasim-samples": "^5.0.4-17",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.1.1",
     "webpack": "^4.20.0",
@@ -268,8 +268,8 @@
     "redux-logger": "^3.0.6",
     "redux-saga": "^0.16.0",
     "reselect": "^3.0.1",
-    "teasim": "^5.0.4-15",
-    "teasim-core": "^5.0.4-15"
+    "teasim": "^5.0.4-17",
+    "teasim-plugin-loading": "^5.0.4-17"
   },
   "repository": {
     "type": "git",
