@@ -227,6 +227,7 @@
     "plop": "^2.1.0",
     "postcss": "^7.0.2",
     "postcss-cli": "^6.0.0",
+    "postcss-flexbugs-fixes": "^4.1.0",
     "postcss-loader": "^3.0.0",
     "postcss-safe-parser": "^4.0.1",
     "prettier": "^1.14.3",
@@ -268,10 +269,10 @@
     "redux-logger": "^3.0.6",
     "redux-saga": "^0.16.0",
     "reselect": "^3.0.1",
-    "teasim": "^5.0.4-12",
-    "teasim-core": "^5.0.4-12",
-    "teasim-mockers": "^5.0.4-12",
-    "teasim-samples": "^5.0.4-12",
+    "teasim": "^5.0.4-13",
+    "teasim-core": "^5.0.4-13",
+    "teasim-mockers": "^5.0.4-13",
+    "teasim-samples": "^5.0.4-13",
     "whatwg-fetch": "^3.0.0"
   },
   "repository": {

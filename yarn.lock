@@ -1270,7 +1270,7 @@ async@^1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
 
-async@^2.1.4, async@^2.4.1, async@^2.5.0:
+async@^2.1.4, async@^2.5.0:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/async/-/async-2.6.1.tgz#b245a23ca71930044ec53fa46aa00a3e87c6a610"
   dependencies:
@@ -1593,6 +1593,10 @@ body-parser@^1.18.3:
 boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
+
+bowser@^1.7.3:
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/bowser/-/bowser-1.9.4.tgz#890c58a2813a9d3243704334fa81b96a5c150c9a"
 
 boxen@^1.2.1:
   version "1.3.0"
@@ -1920,27 +1924,6 @@ chardet@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
 
-cheerio@0.22.0:
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-0.22.0.tgz#a9baa860a3f9b595a6b81b1a86873121ed3a269e"
-  dependencies:
-    css-select "~1.2.0"
-    dom-serializer "~0.1.0"
-    entities "~1.1.1"
-    htmlparser2 "^3.9.1"
-    lodash.assignin "^4.0.9"
-    lodash.bind "^4.1.4"
-    lodash.defaults "^4.0.1"
-    lodash.filter "^4.4.0"
-    lodash.flatten "^4.2.0"
-    lodash.foreach "^4.3.0"
-    lodash.map "^4.4.0"
-    lodash.merge "^4.4.0"
-    lodash.pick "^4.2.1"
-    lodash.reduce "^4.4.0"
-    lodash.reject "^4.4.0"
-    lodash.some "^4.4.0"
-
 child_process@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/child_process/-/child_process-1.0.2.tgz#b1f7e7fc73d25e7fd1d455adc94e143830182b5a"
@@ -2036,14 +2019,6 @@ cli-cursor@^2.1.0:
 cli-width@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
-
-clipboard@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-2.0.1.tgz#a12481e1c13d8a50f5f036b0560fe5d16d74e46a"
-  dependencies:
-    good-listener "^1.2.2"
-    select "^1.1.2"
-    tiny-emitter "^2.0.0"
 
 cliui@^4.0.0:
   version "4.1.0"
@@ -2466,7 +2441,7 @@ css-select-base-adapter@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/css-select-base-adapter/-/css-select-base-adapter-0.1.0.tgz#0102b3d14630df86c3eb9fa9f5456270106cf990"
 
-css-select@^1.1.0, css-select@~1.2.0:
+css-select@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/css-select/-/css-select-1.2.0.tgz#2b3a110539c5355f1cd8d314623e870b121ec858"
   dependencies:
@@ -2732,10 +2707,6 @@ delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
 
-delegate@^3.1.2:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/delegate/-/delegate-3.2.0.tgz#b66b71c3158522e8ab5744f720d8ca0c2af59166"
-
 delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
@@ -2830,7 +2801,7 @@ dom-helpers@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-3.3.1.tgz#fc1a4e15ffdf60ddde03a480a9c0fece821dd4a6"
 
-dom-serializer@0, dom-serializer@~0.1.0:
+dom-serializer@0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-0.1.0.tgz#073c697546ce0780ce23be4a28e293e40bc30c82"
   dependencies:
@@ -2845,7 +2816,7 @@ domain-browser@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.2.0.tgz#3d31f50191a6749dd1375a7f522e823d42e54eda"
 
-domelementtype@1, domelementtype@^1.3.0:
+domelementtype@1:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-1.3.0.tgz#b17aed82e8ab59e52dd9c19b1756e0fc187204c2"
 
@@ -2865,12 +2836,6 @@ domhandler@2.1:
   dependencies:
     domelementtype "1"
 
-domhandler@^2.3.0:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/domhandler/-/domhandler-2.4.2.tgz#8805097e933d65e85546f726d60f5eb88b44f803"
-  dependencies:
-    domelementtype "1"
-
 domutils@1.1:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.1.6.tgz#bddc3de099b9a2efacc51c623f28f416ecc57485"
@@ -2884,7 +2849,7 @@ domutils@1.5.1:
     dom-serializer "0"
     domelementtype "1"
 
-domutils@^1.5.1, domutils@^1.7.0:
+domutils@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.7.0.tgz#56ea341e834e06e6748af7a1cb25da67ea9f8c2a"
   dependencies:
@@ -2983,7 +2948,7 @@ enhanced-resolve@^4.1.0:
     memory-fs "^0.4.0"
     tapable "^1.0.0"
 
-entities@^1.1.1, entities@~1.1.1:
+entities@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
 
@@ -3443,15 +3408,6 @@ extglob@^2.0.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-extract-text-webpack-plugin@^4.0.0-beta.0:
-  version "4.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/extract-text-webpack-plugin/-/extract-text-webpack-plugin-4.0.0-beta.0.tgz#f7361d7ff430b42961f8d1321ba8c1757b5d4c42"
-  dependencies:
-    async "^2.4.1"
-    loader-utils "^1.1.0"
-    schema-utils "^0.4.5"
-    webpack-sources "^1.1.0"
-
 extsprintf@1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.3.0.tgz#96918440e3041a7a414f8c52e3c574eb3c3e1e05"
@@ -3825,14 +3781,6 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-gitbook-plugin-prism@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/gitbook-plugin-prism/-/gitbook-plugin-prism-2.4.0.tgz#4128e2cbfa4c8c4610e8ed330056c249c5ceb2e9"
-  dependencies:
-    cheerio "0.22.0"
-    mkdirp "0.5.1"
-    prismjs "^1.15.0"
-
 glob-base@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/glob-base/-/glob-base-0.3.0.tgz#dbb164f6221b1c0b1ccf82aea328b497df0ea3c4"
@@ -3970,12 +3918,6 @@ globby@^8.0.0:
     ignore "^3.3.5"
     pify "^3.0.0"
     slash "^1.0.0"
-
-good-listener@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/good-listener/-/good-listener-1.2.2.tgz#d53b30cdf9313dffb7dc9a0d477096aa6d145c50"
-  dependencies:
-    delegate "^3.1.2"
 
 got@^6.7.1:
   version "6.7.1"
@@ -4233,17 +4175,6 @@ html-webpack-plugin@^3.0.7:
     toposort "^1.0.0"
     util.promisify "1.0.0"
 
-htmlparser2@^3.9.1:
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-3.9.2.tgz#1bdf87acca0f3f9e53fa4fcceb0f4b4cbb00b338"
-  dependencies:
-    domelementtype "^1.3.0"
-    domhandler "^2.3.0"
-    domutils "^1.5.1"
-    entities "^1.1.1"
-    inherits "^2.0.1"
-    readable-stream "^2.0.2"
-
 htmlparser2@~3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-3.3.0.tgz#cc70d05a59f6542e43f0e685c982e14c924a9efe"
@@ -4428,12 +4359,12 @@ ini@^1.3.4, ini@~1.3.0:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
 
-inline-style-prefixer@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/inline-style-prefixer/-/inline-style-prefixer-5.0.1.tgz#8e1618eb661e51d72a64ee26de05dfe73a95f802"
+inline-style-prefixer@^4.0.0:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/inline-style-prefixer/-/inline-style-prefixer-4.0.2.tgz#d390957d26f281255fe101da863158ac6eb60911"
   dependencies:
+    bowser "^1.7.3"
     css-in-js-utils "^2.0.0"
-    gitbook-plugin-prism "^2.4.0"
 
 inquirer@^6.0.0, inquirer@^6.1.0:
   version "6.2.0"
@@ -5532,14 +5463,6 @@ lodash._getnative@^3.0.0:
   version "3.9.1"
   resolved "https://registry.yarnpkg.com/lodash._getnative/-/lodash._getnative-3.9.1.tgz#570bc7dede46d61cdcde687d65d3eecbaa3aaff5"
 
-lodash.assignin@^4.0.9:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/lodash.assignin/-/lodash.assignin-4.2.0.tgz#ba8df5fb841eb0a3e8044232b0e263a8dc6a28a2"
-
-lodash.bind@^4.1.4:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/lodash.bind/-/lodash.bind-4.2.1.tgz#7ae3017e939622ac31b7d7d7dcb1b34db1690d35"
-
 lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
@@ -5547,22 +5470,6 @@ lodash.camelcase@^4.3.0:
 lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
-
-lodash.defaults@^4.0.1:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
-
-lodash.filter@^4.4.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.filter/-/lodash.filter-4.6.0.tgz#668b1d4981603ae1cc5a6fa760143e480b4c4ace"
-
-lodash.flatten@^4.2.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/lodash.flatten/-/lodash.flatten-4.4.0.tgz#f31c22225a9632d2bbf8e4addbef240aa765a61f"
-
-lodash.foreach@^4.3.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/lodash.foreach/-/lodash.foreach-4.5.0.tgz#1a6a35eace401280c7f06dddec35165ab27e3e53"
 
 lodash.get@^4.4.2:
   version "4.4.2"
@@ -5584,33 +5491,9 @@ lodash.keys@^3.1.2:
     lodash.isarguments "^3.0.0"
     lodash.isarray "^3.0.0"
 
-lodash.map@^4.4.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.map/-/lodash.map-4.6.0.tgz#771ec7839e3473d9c4cde28b19394c3562f4f6d3"
-
 lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
-
-lodash.merge@^4.4.0:
-  version "4.6.1"
-  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.1.tgz#adc25d9cb99b9391c59624f379fbba60d7111d54"
-
-lodash.pick@^4.2.1:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/lodash.pick/-/lodash.pick-4.4.0.tgz#52f05610fff9ded422611441ed1fc123a03001b3"
-
-lodash.reduce@^4.4.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.reduce/-/lodash.reduce-4.6.0.tgz#f1ab6b839299ad48f784abbf476596f03b914d3b"
-
-lodash.reject@^4.4.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.reject/-/lodash.reject-4.6.0.tgz#80d6492dc1470864bbf583533b651f42a9f52415"
-
-lodash.some@^4.4.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.some/-/lodash.some-4.6.0.tgz#1bb9f314ef6b8baded13b549169b2a945eb68e4d"
 
 lodash.sortby@^4.7.0:
   version "4.7.0"
@@ -6769,6 +6652,12 @@ postcss-discard-overridden@^4.0.0:
   dependencies:
     postcss "^7.0.0"
 
+postcss-flexbugs-fixes@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-flexbugs-fixes/-/postcss-flexbugs-fixes-4.1.0.tgz#e094a9df1783e2200b7b19f875dcad3b3aff8b20"
+  dependencies:
+    postcss "^7.0.0"
+
 postcss-load-config@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/postcss-load-config/-/postcss-load-config-2.0.0.tgz#f1312ddbf5912cd747177083c5ef7a19d62ee484"
@@ -7067,12 +6956,6 @@ pretty-format@^23.6.0:
 pretty-hrtime@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
-
-prismjs@^1.15.0:
-  version "1.15.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.15.0.tgz#8801d332e472091ba8def94976c8877ad60398d9"
-  optionalDependencies:
-    clipboard "^2.0.0"
 
 private@^0.1.6, private@^0.1.8, private@~0.1.5:
   version "0.1.8"
@@ -7894,10 +7777,6 @@ schema-utils@^1.0.0:
     ajv-errors "^1.0.0"
     ajv-keywords "^3.1.0"
 
-select@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/select/-/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
-
 semver-diff@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/semver-diff/-/semver-diff-2.1.0.tgz#4bbb8437c8d37e4b0cf1a68fd726ec6d645d6d36"
@@ -8488,9 +8367,9 @@ teakit@^0.0.3:
     caniuse-api "^3.0.0"
     immutable "^3.8.2"
 
-teasim-assists@^5.0.4-12:
-  version "5.0.4-12"
-  resolved "https://registry.yarnpkg.com/teasim-assists/-/teasim-assists-5.0.4-12.tgz#1664fadc2ba5aab4925382d7b163b61801c38fd8"
+teasim-assists@^5.0.4-13:
+  version "5.0.4-13"
+  resolved "https://registry.yarnpkg.com/teasim-assists/-/teasim-assists-5.0.4-13.tgz#2520115493f8f182645bc27d2164e3e71dd0b587"
   dependencies:
     immutable "^3.8.2"
     prop-types "^15.6.2"
@@ -8499,9 +8378,9 @@ teasim-assists@^5.0.4-12:
     react-transition-group "^2.3.1"
     teakit "^0.0.3"
 
-teasim-core@^5.0.4-12:
-  version "5.0.4-12"
-  resolved "https://registry.yarnpkg.com/teasim-core/-/teasim-core-5.0.4-12.tgz#5f891d4fe3d657c5aaa07e6976669f9d201d1982"
+teasim-core@^5.0.4-13:
+  version "5.0.4-13"
+  resolved "https://registry.yarnpkg.com/teasim-core/-/teasim-core-5.0.4-13.tgz#f79c8c6f1dda142de0db5d6caf70458a4d6d9d89"
   dependencies:
     fontfaceobserver "^2.0.13"
     global "^4.3.2"
@@ -8520,9 +8399,9 @@ teasim-core@^5.0.4-12:
     redux-saga "^0.16.0"
     teakit "^0.0.3"
 
-teasim-form@^5.0.4-12:
-  version "5.0.4-12"
-  resolved "https://registry.yarnpkg.com/teasim-form/-/teasim-form-5.0.4-12.tgz#6b01a6f3eb8b9b2b28ad77b5eb53d8cac5374591"
+teasim-form@^5.0.4-13:
+  version "5.0.4-13"
+  resolved "https://registry.yarnpkg.com/teasim-form/-/teasim-form-5.0.4-13.tgz#0a8be71e090411f6826929f64f3833f54183dbd4"
   dependencies:
     immutable "^3.8.2"
     moment "^2.18.1"
@@ -8530,81 +8409,81 @@ teasim-form@^5.0.4-12:
     react "^16.5.2"
     react-dom "^16.5.2"
     teakit "^0.0.3"
-    teasim-assists "^5.0.4-12"
-    teasim-foundation "^5.0.4-12"
-    teasim-icon "^5.0.4-12"
-    teasim-less "^5.0.4-12"
-    teasim-presets "^5.0.4-12"
-    teasim-skelecton "^5.0.4-12"
+    teasim-assists "^5.0.4-13"
+    teasim-foundation "^5.0.4-13"
+    teasim-icon "^5.0.4-13"
+    teasim-less "^5.0.4-13"
+    teasim-presets "^5.0.4-13"
+    teasim-skelecton "^5.0.4-13"
 
-teasim-foundation@^5.0.4-12:
-  version "5.0.4-12"
-  resolved "https://registry.yarnpkg.com/teasim-foundation/-/teasim-foundation-5.0.4-12.tgz#860531688e3d8dbc7efb7914c369980972ee7711"
+teasim-foundation@^5.0.4-13:
+  version "5.0.4-13"
+  resolved "https://registry.yarnpkg.com/teasim-foundation/-/teasim-foundation-5.0.4-13.tgz#9de85ae5bbebc9ae07034310ba0618b88aa7beac"
   dependencies:
     immutable "^3.8.2"
     prop-types "^15.6.2"
     react "^16.5.2"
     react-dom "^16.5.2"
     teakit "^0.0.3"
-    teasim-assists "^5.0.4-12"
-    teasim-icon "^5.0.4-12"
-    teasim-less "^5.0.4-12"
-    teasim-localization "^5.0.4-12"
-    teasim-presets "^5.0.4-12"
-    teasim-skelecton "^5.0.4-12"
+    teasim-assists "^5.0.4-13"
+    teasim-icon "^5.0.4-13"
+    teasim-less "^5.0.4-13"
+    teasim-localization "^5.0.4-13"
+    teasim-presets "^5.0.4-13"
+    teasim-skelecton "^5.0.4-13"
 
-teasim-helmet@^5.0.4-12:
-  version "5.0.4-12"
-  resolved "https://registry.yarnpkg.com/teasim-helmet/-/teasim-helmet-5.0.4-12.tgz#906565e0b2125ded6ba9aeeb7014c82994e49173"
+teasim-helmet@^5.0.4-13:
+  version "5.0.4-13"
+  resolved "https://registry.yarnpkg.com/teasim-helmet/-/teasim-helmet-5.0.4-13.tgz#b9e605bdbf58ec46add2191847694a5bc1764c66"
   dependencies:
     prop-types "^15.6.2"
     react "^16.5.2"
     react-dom "^16.5.2"
     teakit "^0.0.3"
-    teasim-assists "^5.0.4-12"
-    teasim-presets "^5.0.4-12"
+    teasim-assists "^5.0.4-13"
+    teasim-presets "^5.0.4-13"
 
-teasim-icon@^5.0.4-12:
-  version "5.0.4-12"
-  resolved "https://registry.yarnpkg.com/teasim-icon/-/teasim-icon-5.0.4-12.tgz#27ae80fb9c04352dbf2d76541cc5996ce247c41d"
+teasim-icon@^5.0.4-13:
+  version "5.0.4-13"
+  resolved "https://registry.yarnpkg.com/teasim-icon/-/teasim-icon-5.0.4-13.tgz#8071a9075a1e2f2a631837e43d4a1f4529bb7d07"
   dependencies:
     prop-types "^15.6.2"
     react "^16.5.2"
     react-dom "^16.5.2"
     teakit "^0.0.3"
-    teasim-assists "^5.0.4-12"
-    teasim-presets "^5.0.4-12"
+    teasim-assists "^5.0.4-13"
+    teasim-presets "^5.0.4-13"
 
-teasim-layout@^5.0.4-12:
-  version "5.0.4-12"
-  resolved "https://registry.yarnpkg.com/teasim-layout/-/teasim-layout-5.0.4-12.tgz#a28bbd23876e413fc13abb38da2caa4df5365204"
+teasim-layout@^5.0.4-13:
+  version "5.0.4-13"
+  resolved "https://registry.yarnpkg.com/teasim-layout/-/teasim-layout-5.0.4-13.tgz#9b98d5863b0b96670a89dd8c843b552500a24c92"
   dependencies:
     prop-types "^15.6.2"
     react "^16.5.2"
     react-dom "^16.5.2"
     teakit "^0.0.3"
-    teasim-assists "^5.0.4-12"
-    teasim-icon "^5.0.4-12"
-    teasim-less "^5.0.4-12"
-    teasim-presets "^5.0.4-12"
-    teasim-skelecton "^5.0.4-12"
+    teasim-assists "^5.0.4-13"
+    teasim-icon "^5.0.4-13"
+    teasim-less "^5.0.4-13"
+    teasim-presets "^5.0.4-13"
+    teasim-skelecton "^5.0.4-13"
 
-teasim-less@^5.0.4-12:
-  version "5.0.4-12"
-  resolved "https://registry.yarnpkg.com/teasim-less/-/teasim-less-5.0.4-12.tgz#451715e349f959d06ef5340658e288b6bb2c0cca"
+teasim-less@^5.0.4-13:
+  version "5.0.4-13"
+  resolved "https://registry.yarnpkg.com/teasim-less/-/teasim-less-5.0.4-13.tgz#defc2fa022fd1e1e065ba94a60e33ce03ac6a230"
 
-teasim-localization@^5.0.4-12:
-  version "5.0.4-12"
-  resolved "https://registry.yarnpkg.com/teasim-localization/-/teasim-localization-5.0.4-12.tgz#213db46186c3c4d6d18978305df4bdc1257dd716"
+teasim-localization@^5.0.4-13:
+  version "5.0.4-13"
+  resolved "https://registry.yarnpkg.com/teasim-localization/-/teasim-localization-5.0.4-13.tgz#658e53609bb2c08582c4b9c6b5f2dfa3f975128c"
   dependencies:
     prop-types "^15.6.2"
     react "^16.5.2"
     react-dom "^16.5.2"
     teakit "^0.0.3"
 
-teasim-mockers@^5.0.4-12:
-  version "5.0.4-12"
-  resolved "https://registry.yarnpkg.com/teasim-mockers/-/teasim-mockers-5.0.4-12.tgz#6e384d87b544a58e4fb12ee13c3951579a6d41e3"
+teasim-mockers@^5.0.4-13:
+  version "5.0.4-13"
+  resolved "https://registry.yarnpkg.com/teasim-mockers/-/teasim-mockers-5.0.4-13.tgz#bf5cd6c05bb389b17f61913f88b74c1e20846d27"
   dependencies:
     chalk "^2.1.0"
     chokidar "^2.0.3"
@@ -8618,9 +8497,9 @@ teasim-mockers@^5.0.4-12:
     statuses "^1.3.1"
     teakit "^0.0.3"
 
-teasim-motion@^5.0.4-12:
-  version "5.0.4-12"
-  resolved "https://registry.yarnpkg.com/teasim-motion/-/teasim-motion-5.0.4-12.tgz#c4a9118b734963d2fd7e59ee0f910b7960ed338a"
+teasim-motion@^5.0.4-13:
+  version "5.0.4-13"
+  resolved "https://registry.yarnpkg.com/teasim-motion/-/teasim-motion-5.0.4-13.tgz#7f7717f8f2267e6738a7d88e341949bd25e7e079"
   dependencies:
     create-react-context "^0.2.3"
     prop-types "^15.6.2"
@@ -8628,25 +8507,25 @@ teasim-motion@^5.0.4-12:
     react-dom "^16.5.2"
     teakit "^0.0.3"
 
-teasim-notification@^5.0.4-12:
-  version "5.0.4-12"
-  resolved "https://registry.yarnpkg.com/teasim-notification/-/teasim-notification-5.0.4-12.tgz#b851707e90fbe266c9f25abf13e33f8a5734ddc0"
+teasim-notification@^5.0.4-13:
+  version "5.0.4-13"
+  resolved "https://registry.yarnpkg.com/teasim-notification/-/teasim-notification-5.0.4-13.tgz#73fc702546a392655cc3a44d5e541a34f585bccc"
   dependencies:
     immutable "^3.8.2"
     prop-types "^15.6.2"
     react "^16.5.2"
     react-dom "^16.5.2"
     teakit "^0.0.3"
-    teasim-assists "^5.0.4-12"
-    teasim-icon "^5.0.4-12"
-    teasim-less "^5.0.4-12"
-    teasim-motion "^5.0.4-12"
-    teasim-presets "^5.0.4-12"
-    teasim-skelecton "^5.0.4-12"
+    teasim-assists "^5.0.4-13"
+    teasim-icon "^5.0.4-13"
+    teasim-less "^5.0.4-13"
+    teasim-motion "^5.0.4-13"
+    teasim-presets "^5.0.4-13"
+    teasim-skelecton "^5.0.4-13"
 
-teasim-presets@^5.0.4-12:
-  version "5.0.4-12"
-  resolved "https://registry.yarnpkg.com/teasim-presets/-/teasim-presets-5.0.4-12.tgz#e39bb832b1a4958f98f43cee20054270f6588329"
+teasim-presets@^5.0.4-13:
+  version "5.0.4-13"
+  resolved "https://registry.yarnpkg.com/teasim-presets/-/teasim-presets-5.0.4-13.tgz#c4c93f01affeece23444edd4b4d84dc69296233c"
   dependencies:
     moment "^2.22.1"
     prop-types "^15.6.2"
@@ -8654,9 +8533,9 @@ teasim-presets@^5.0.4-12:
     react-dom "^16.5.2"
     teakit "^0.0.3"
 
-teasim-samples@^5.0.4-12:
-  version "5.0.4-12"
-  resolved "https://registry.yarnpkg.com/teasim-samples/-/teasim-samples-5.0.4-12.tgz#a58dd9f87097b2a4baf3f5b147c80625ced9290b"
+teasim-samples@^5.0.4-13:
+  version "5.0.4-13"
+  resolved "https://registry.yarnpkg.com/teasim-samples/-/teasim-samples-5.0.4-13.tgz#42855c82e1ea6cc561ec02d314dc3d85602382a2"
   dependencies:
     airbnb-js-shims "^2.1.0"
     babel-plugin-react-docgen "^2.0.0"
@@ -8665,11 +8544,10 @@ teasim-samples@^5.0.4-12:
     commander "^2.14.1"
     common-tags "^1.4.0"
     express "^4.15.3"
-    extract-text-webpack-plugin "^4.0.0-beta.0"
     fontfaceobserver "^2.0.13"
     fuse.js "^3.0.3"
     fuzzysearch "^1.0.3"
-    inline-style-prefixer "^5.0.1"
+    inline-style-prefixer "^4.0.0"
     json-stringify-safe "^5.0.1"
     mantra-core "^1.7.0"
     prop-types "^15.6.2"
@@ -8687,57 +8565,57 @@ teasim-samples@^5.0.4-12:
     update-notifier "^2.1.0"
     util-deprecate "^1.0.2"
 
-teasim-skelecton@^5.0.4-12:
-  version "5.0.4-12"
-  resolved "https://registry.yarnpkg.com/teasim-skelecton/-/teasim-skelecton-5.0.4-12.tgz#190f57b6ff743f3d368e1afa873fde4e64d829c8"
+teasim-skelecton@^5.0.4-13:
+  version "5.0.4-13"
+  resolved "https://registry.yarnpkg.com/teasim-skelecton/-/teasim-skelecton-5.0.4-13.tgz#903e3e9adea65defbcc8f0cb71e0f70298f83193"
   dependencies:
     prop-types "^15.6.2"
     react "^16.5.2"
     react-dom "^16.5.2"
     teakit "^0.0.3"
-    teasim-assists "^5.0.4-12"
-    teasim-less "^5.0.4-12"
-    teasim-presets "^5.0.4-12"
+    teasim-assists "^5.0.4-13"
+    teasim-less "^5.0.4-13"
+    teasim-presets "^5.0.4-13"
 
-teasim-tabulation@^5.0.4-12:
-  version "5.0.4-12"
-  resolved "https://registry.yarnpkg.com/teasim-tabulation/-/teasim-tabulation-5.0.4-12.tgz#0b7ec6f9f728600ea0bbb9912da658e9c1786523"
+teasim-tabulation@^5.0.4-13:
+  version "5.0.4-13"
+  resolved "https://registry.yarnpkg.com/teasim-tabulation/-/teasim-tabulation-5.0.4-13.tgz#e1f8200d454867621c2b8afaeac1520b32a0acd7"
   dependencies:
     immutable "^3.8.2"
     prop-types "^15.6.2"
     react "^16.5.2"
     react-dom "^16.5.2"
     teakit "^0.0.3"
-    teasim-assists "^5.0.4-12"
-    teasim-foundation "^5.0.4-12"
-    teasim-icon "^5.0.4-12"
-    teasim-less "^5.0.4-12"
-    teasim-localization "^5.0.4-12"
-    teasim-motion "^5.0.4-12"
-    teasim-presets "^5.0.4-12"
-    teasim-skelecton "^5.0.4-12"
+    teasim-assists "^5.0.4-13"
+    teasim-foundation "^5.0.4-13"
+    teasim-icon "^5.0.4-13"
+    teasim-less "^5.0.4-13"
+    teasim-localization "^5.0.4-13"
+    teasim-motion "^5.0.4-13"
+    teasim-presets "^5.0.4-13"
+    teasim-skelecton "^5.0.4-13"
 
-teasim@^5.0.4-12:
-  version "5.0.4-12"
-  resolved "https://registry.yarnpkg.com/teasim/-/teasim-5.0.4-12.tgz#93a00a36537e3474835296b67ce79c97dd35da8e"
+teasim@^5.0.4-13:
+  version "5.0.4-13"
+  resolved "https://registry.yarnpkg.com/teasim/-/teasim-5.0.4-13.tgz#ae3380529f3bb5f177e1ee18733199453d3c099c"
   dependencies:
     immutable "^3.8.2"
     prop-types "^15.6.2"
     react "^16.5.2"
     react-dom "^16.5.2"
     teakit "^0.0.3"
-    teasim-assists "^5.0.4-12"
-    teasim-form "^5.0.4-12"
-    teasim-foundation "^5.0.4-12"
-    teasim-helmet "^5.0.4-12"
-    teasim-icon "^5.0.4-12"
-    teasim-layout "^5.0.4-12"
-    teasim-less "^5.0.4-12"
-    teasim-localization "^5.0.4-12"
-    teasim-notification "^5.0.4-12"
-    teasim-presets "^5.0.4-12"
-    teasim-skelecton "^5.0.4-12"
-    teasim-tabulation "^5.0.4-12"
+    teasim-assists "^5.0.4-13"
+    teasim-form "^5.0.4-13"
+    teasim-foundation "^5.0.4-13"
+    teasim-helmet "^5.0.4-13"
+    teasim-icon "^5.0.4-13"
+    teasim-layout "^5.0.4-13"
+    teasim-less "^5.0.4-13"
+    teasim-localization "^5.0.4-13"
+    teasim-notification "^5.0.4-13"
+    teasim-presets "^5.0.4-13"
+    teasim-skelecton "^5.0.4-13"
+    teasim-tabulation "^5.0.4-13"
 
 term-size@^1.2.0:
   version "1.2.0"
@@ -8787,10 +8665,6 @@ timers-browserify@^2.0.4:
 timsort@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
-
-tiny-emitter@^2.0.0:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.0.2.tgz#82d27468aca5ade8e5fd1e6d22b57dd43ebdfb7c"
 
 title-case@^2.1.0:
   version "2.1.1"

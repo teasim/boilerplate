@@ -1,7 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const autoprefixer = require("autoprefixer");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = options => ({
   mode: options.mode,
@@ -29,31 +29,27 @@ module.exports = options => ({
       },
       {
         test: /\.less$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: [
-            {
-              loader: "css-loader",
-              options: {
-                modules: true,
-                importLoaders: 2
-              }
-            },
-            {
-              loader: "postcss-loader",
-              options: {
-                plugins: [autoprefixer]
-              }
-            },
-            {
-              loader: "less-loader",
-              options: {
-                javascriptEnabled: true,
-                noIeCompat: true
-              }
+        exclude: /node_modules/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: "css-loader",
+            options: { importLoaders: 2 }
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              plugins: [autoprefixer]
             }
-          ]
-        })
+          },
+          {
+            loader: "less-loader",
+            options: {
+              javascriptEnabled: true,
+              noIeCompat: true
+            }
+          }
+        ]
       },
       {
         test: /\.(eot|svg|otf|ttf|woff|woff2|node)$/,
@@ -97,8 +93,7 @@ module.exports = options => ({
     new webpack.ProvidePlugin({
       fetch: "exports-loader?self.fetch!whatwg-fetch"
     }),
-    new webpack.ContextReplacementPlugin(/\.\/locale$/, "empty-module", false, /js$/),
-    new ExtractTextPlugin("application.css")
+    new webpack.ContextReplacementPlugin(/\.\/locale$/, "empty-module", false, /js$/)
   ]),
   resolve: {
     modules: [path.resolve(process.cwd(), "app"), path.resolve(process.cwd(), "node_modules")],
