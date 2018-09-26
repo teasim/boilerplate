@@ -19,14 +19,6 @@ module.exports = api => {
       "@babel/preset-flow"
     ],
     plugins: [
-      [
-        "babel-plugin-import",
-        {
-          "libraryName": "antd",
-          "libraryDirectory": "lib",
-          "style": true
-        }
-      ],
       "@babel/plugin-syntax-dynamic-import",
       [
         "@babel/plugin-proposal-object-rest-spread",
