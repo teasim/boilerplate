@@ -18,7 +18,7 @@
     "build:clean": "rimraf ./build",
     "build:dll": "node ./internals/scripts/dependencies.js",
     "build:sample": "build-sample",
-    "start": "cross-env NODE_ENV=development babel-node server --presets env,stage-0",
+    "start": "cross-env NODE_ENV=development babel-node server",
     "start:tunnel": "cross-env NODE_ENV=development ENABLE_TUNNEL=true babel-node server",
     "start:production": "npm run test && npm run build && npm run start:prod",
     "start:prod": "cross-env NODE_ENV=production babel-node server",
