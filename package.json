@@ -236,6 +236,7 @@
     "rimraf": "^2.6.2",
     "style-loader": "^0.23.0",
     "stylelint-webpack-plugin": "^0.10.5",
+    "teasim-fackers": "^5.0.4-17",
     "teasim-mockers": "^5.0.4-17",
     "teasim-samples": "^5.0.4-17",
     "uglifyjs-webpack-plugin": "^2.0.1",
