@@ -1,7 +1,7 @@
 
   module.exports = {
-    port: "3030",
+    port: "",
     docPort: "8000",
-    isStatic: false,
+    isStatic: true,
   }
   

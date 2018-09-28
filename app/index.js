@@ -18,3 +18,8 @@ app.install(require("pages").default);
 
 /* 5. Mount */
 app.mount('#root');
+
+/* 6. ServiceWorker */
+if (process.env.NODE_ENV === "production") {
+  require("offline-plugin/runtime").install(); // eslint-disable-line global-require
+}

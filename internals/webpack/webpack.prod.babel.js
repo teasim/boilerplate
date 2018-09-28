@@ -24,13 +24,6 @@ const cdn = {
   Teasim: `https://unpkg.com/teasim@${vendors["teasim"]}/umd/teasim.min.js`
 };
 
-const plugins = [
-  new MiniCssExtractPlugin({
-    filename: "[name].css",
-    chunkFilename: "[id].css"
-  })
-];
-
 module.exports = require("./webpack.base.babel")({
   mode: "production",
   entry: [path.join(process.cwd(), "app/index.js")],
