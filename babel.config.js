@@ -66,9 +66,6 @@ module.exports = api => {
       "@babel/plugin-proposal-do-expressions",
       "@babel/plugin-proposal-function-bind",
       "@babel/plugin-transform-runtime"
-    ],
-    exclude: [
-      "./node_modules"
     ]
   }
 }

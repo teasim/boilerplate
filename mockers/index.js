@@ -1,6 +1,6 @@
-import fackers from "teasim-fackers";
-import { format } from "teasim-mockers";
-import { getProfileBasicData, getProfileAdvancedData } from "./profile";
+const fackers = require("teasim-fackers").default;
+const { format } = require("teasim-mockers");
+const { getProfileBasicData, getProfileAdvancedData } = require("./profile");
 
 const proxy = {
   "GET /api/users": [

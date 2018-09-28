@@ -5,7 +5,7 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const AddAssetHtmlPlugin = require("add-asset-html-webpack-plugin");
 const logger = require("../../server/logger");
-const pkg = require(path.resolve(process.cwd(), "package.json"));
+const pkg = require("../../package.json");
 const dllPlugin = pkg.dllPlugin;
 
 const plugins = [
