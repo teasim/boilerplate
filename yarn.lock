@@ -9109,15 +9109,16 @@ teasim-localization@^5.0.4-19:
     react-dom "^16.5.2"
     teakit "^0.0.3"
 
-teasim-mockers@^5.0.4-19.2:
-  version "5.0.4-19.2"
-  resolved "https://registry.yarnpkg.com/teasim-mockers/-/teasim-mockers-5.0.4-19.2.tgz#0ecd488070ba979ff732791487d5897bcc9ac5fe"
+teasim-mockers@^5.0.4-19.3:
+  version "5.0.4-19.3"
+  resolved "https://registry.yarnpkg.com/teasim-mockers/-/teasim-mockers-5.0.4-19.3.tgz#999c362c4b44e723bc56e177ac1f21cf81ddcc9e"
   dependencies:
     chalk "^2.1.0"
     chokidar "^2.0.3"
     commander "^2.11.0"
     fs-extra "^7.0.0"
     is-windows "^1.0.1"
+    isomorphic-fetch "^2.2.1"
     mime-component "0.0.1"
     portfinder "^1.0.13"
     qs "^6.4.0"

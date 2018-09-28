@@ -241,7 +241,7 @@
     "style-loader": "^0.23.0",
     "stylelint-webpack-plugin": "^0.10.5",
     "teasim-fackers": "^5.0.4-19",
-    "teasim-mockers": "^5.0.4-19.2",
+    "teasim-mockers": "^5.0.4-19.3",
     "teasim-samples": "^5.0.4-19",
     "teasim-scripts": "^5.0.4-19.3",
     "uglifyjs-webpack-plugin": "^2.0.1",
