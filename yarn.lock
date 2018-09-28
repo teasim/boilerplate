@@ -9109,9 +9109,9 @@ teasim-localization@^5.0.4-19:
     react-dom "^16.5.2"
     teakit "^0.0.3"
 
-teasim-mockers@^5.0.4-19.3:
-  version "5.0.4-19.3"
-  resolved "https://registry.yarnpkg.com/teasim-mockers/-/teasim-mockers-5.0.4-19.3.tgz#999c362c4b44e723bc56e177ac1f21cf81ddcc9e"
+teasim-mockers@^5.0.4-19.6:
+  version "5.0.4-19.6"
+  resolved "https://registry.yarnpkg.com/teasim-mockers/-/teasim-mockers-5.0.4-19.6.tgz#1652af92d0e1438c12b18e3251514239605d658a"
   dependencies:
     chalk "^2.1.0"
     chokidar "^2.0.3"

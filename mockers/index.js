@@ -1,5 +1,5 @@
 const fackers = require("teasim-fackers").default;
-const { format } = require("teasim-mockers");
+const mockers = require("teasim-mockers").default;
 const { getProfileBasicData, getProfileAdvancedData } = require("./profile");
 
 const proxy = {
@@ -61,4 +61,4 @@ const proxy = {
   }
 };
 
-module.exports = format(proxy);
+module.exports = mockers(proxy);
