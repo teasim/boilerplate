@@ -200,10 +200,10 @@
     "rimraf": "^2.6.2",
     "style-loader": "^0.23.0",
     "stylelint-webpack-plugin": "^0.10.5",
-    "teasim-fackers": "^5.0.4-21",
-    "teasim-mockers": "^5.0.4-21",
-    "teasim-samples": "^5.0.4-21",
-    "teasim-scripts": "^5.0.4-21",
+    "teasim-fackers": "^5.0.4-22",
+    "teasim-mockers": "^5.0.4-22",
+    "teasim-samples": "^5.0.4-22",
+    "teasim-scripts": "^5.0.4-22",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.1.1",
     "webpack": "^4.20.0",
@@ -232,8 +232,8 @@
     "redux-logger": "^3.0.6",
     "redux-saga": "^0.16.0",
     "reselect": "^4.0.0",
-    "teasim": "^5.0.4-21",
-    "teasim-plugin-loading": "^5.0.4-21"
+    "teasim": "^5.0.4-22",
+    "teasim-plugin-loading": "^5.0.4-22"
   },
   "repository": {
     "type": "git",
