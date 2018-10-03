@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+
+const start = require('../lib/start');
+const build = require('../lib/build');
+const staticFunc = require('../lib/static');
+const pkg = require('../package.json');
+
+program.version(pkg.version)
+  .option('start', 'Start mocker api docs website.')
+  .option('build', 'Build mocker api docs website.')
+  .option('static', 'Transfer current project request.js to support static mocker data.')
+  .parse(process.argv);
+
+if (program.start) {
+  start(process.argv);
+}
+
+if (program.build) {
+  build(process.argv);
+}
+
+if (program.static) {
+  staticFunc(process.argv);
+}
