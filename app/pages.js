@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { ConnectedRouter } from "react-router-redux";
-import Home from "./Home";
+import { ConnectedRouter } from 'react-router-redux';
+import Home from './Home';
 
 function Application({ history }) {
   return (
