@@ -1,64 +1,66 @@
-const fackers = require("teasim-fackers").default;
-const mockers = require("teasim-mockers").default;
-const { getProfileBasicData, getProfileAdvancedData } = require("./profile");
+const fackers = require('teasim-fackers').default;
+const mockers = require('teasim-mockers').default;
+const { getProfileBasicData, getProfileAdvancedData } = require('./profile');
 
 const proxy = {
-  "GET /api/users": [
+  'GET /api/users': [
     {
-      key: "1",
-      name: "John Brown",
+      key: '1',
+      name: 'John Brown',
       age: 32,
-      address: "New York No. 1 Lake Park"
+      address: 'New York No. 1 Lake Park',
     },
     {
-      key: "2",
-      name: "Jim Green",
+      key: '2',
+      name: 'Jim Green',
       age: 42,
-      address: "London No. 1 Lake Park"
+      address: 'London No. 1 Lake Park',
     },
     {
-      key: "3",
-      name: "Joe Black",
+      key: '3',
+      name: 'Joe Black',
       age: 32,
-      address: "Sidney No. 1 Lake Park"
-    }
+      address: 'Sidney No. 1 Lake Park',
+    },
   ],
-  "GET /api/tags": fackers.mock({
-    "list|100": [{ 
-      name: "@city", 
-      "value|1-100": 150, 
-      "type|0-2": 1 
-    }]
+  'GET /api/tags': fackers.mock({
+    'list|100': [
+      {
+        name: '@city',
+        'value|1-100': 150,
+        'type|0-2': 1,
+      },
+    ],
   }),
-  "GET /api/profile/basic": getProfileBasicData,
-  "GET /api/profile/advanced": getProfileAdvancedData,
-  "POST /api/login/account": (req, res) => {
+  'GET /api/profile/basic': getProfileBasicData,
+  'GET /api/profile/advanced': getProfileAdvancedData,
+  'POST /api/login/account': (req, res) => {
     const { password, userName, type } = req.body;
-    if (password === "123456" && userName === "admin") {
+    if (password === '123456' && userName === 'admin') {
       res.send({
-        status: "ok",
+        status: 'ok',
         type,
-        authority: "admin"
+        authority: 'admin',
       });
       return;
     }
-    if (password === "123456" && userName === "user") {
+    if (password === '123456' && userName === 'user') {
       res.send({
-        status: "ok",
+        status: 'ok',
         type,
-        authority: "user"
+        authority: 'user',
       });
       return;
     }
     res.send({
-      status: "error",
+      status: 'error',
       type,
-      authority: "guest"
+      authority: 'guest',
     });
   },
-  "POST /api/register": (req, res) => {
-    res.send({ status: "ok", authority: "user" });
-  }
+  'POST /api/register': (req, res) => {
+    res.send({ status: 'ok', authority: 'user' });
+  },
 };
 
 module.exports = mockers(proxy);
