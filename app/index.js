@@ -11,7 +11,8 @@ const app = teasim({
 app.use(createLoading());
 
 /* 3. Models */
-app.model(require('models').default);
+app.model(require('models/digit').default);
+app.model(require('models/user').default);
 
 /* 4. Install */
 app.install(require('pages').default);
