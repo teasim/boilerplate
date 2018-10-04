@@ -1,7 +1,11 @@
-function delay(proxy, timer) {
-  let mockApi = {};
+var format = function(mockData) {
+  return delay(mockData, 0);
+};
+
+var delay = function(proxy, timer) {
+  var mockApi = {};
   Object.keys(proxy).forEach(function(key) {
-    let result = proxy[key].$body || proxy[key];
+    var result = proxy[key].$body || proxy[key];
     if (
       Object.prototype.toString.call(result) === '[object String]' &&
       /^http/.test(result)
@@ -9,7 +13,7 @@ function delay(proxy, timer) {
       mockApi[key] = proxy[key];
     } else {
       mockApi[key] = function(req, res) {
-        let foo;
+        var foo;
         if (Object.prototype.toString.call(result) === '[object Function]') {
           foo = result;
         } else {
@@ -26,10 +30,7 @@ function delay(proxy, timer) {
   });
   mockApi.__mockData = proxy;
   return mockApi;
-}
-
-module.delay = delay;
-
-module.exports = function(mockData) {
-  return delay(mockData, 0);
 };
+
+module.exports.delay = delay;
+module.exports.format = format;

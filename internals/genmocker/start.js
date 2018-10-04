@@ -33,7 +33,7 @@ module.exports = function(args) {
   }
 
   // 1. 创建临时文件夹
-  const tempDir = path.join(cwd, './mockers-docs');
+  const tempDir = path.join(cwd, './mockers-temp');
   const boilerplateDir = path.join(__dirname, '../boilerplate');
 
   process.on('exit', () => {});
@@ -93,7 +93,7 @@ module.exports = mockers;
     }
 
     // 5. 启动
-    process.chdir('mockers-docs');
+    process.chdir('mockers-temp');
     shelljs.ln('-sf', '../node_modules', 'node_modules');
     shelljs.exec('npm start', (code, stdout, stderr) => {
       if (err) {

@@ -1,11 +1,6 @@
 {
   "name": "mockers-api-docs-boilerplate",
-  "port": "8080",
   "private": true,
-  "scripts": {
-    "start": "cross-env NODE_ENV=development babel-node ../server",
-    "build": "cross-env NODE_ENV=production webpack --config ../internals/webpack/webpack.prod.babel.js --color -p --progress --hide-modules"
-  },
   "dependencies": {},
   "devDependencies": {}
 }
