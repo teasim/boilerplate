@@ -33,7 +33,7 @@ module.exports = function(args, callback) {
   }
 
   // 1. 创建临时文件夹
-  const tempDir = path.join(cwd, './mockers-static');
+  const tempDir = path.join(cwd, './mockers-docs');
   const boilerplateDir = path.join(__dirname, '../boilerplate');
 
   process.on('exit', () => {});
@@ -65,7 +65,7 @@ module.exports = function(args, callback) {
   "port": "8080",
   "private": true,
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --config ./node_modules/teasim-scripts/lib/internals/webpack/webpack.prod.babel.js --color -p --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --config ./internals/webpack/webpack.prod.babel.js --color -p --progress --hide-modules"
   },
   "dependencies": {},
   "devDependencies": {}
@@ -73,12 +73,11 @@ module.exports = function(args, callback) {
 
   fs.writeFileSync(path.join(tempDir, './package.json'), pkg(), 'utf-8');
 
-  // 4. 启动 roadhog
-  process.chdir('mockers-static');
+  process.chdir('mockers-docs');
   shelljs.ln('-sf', '../node_modules', 'node_modules');
   shelljs.exec('npm run build', (code, stdout, stderr) => {
-    fs.removeSync(path.join(tempDir, './dist/index.html'));
-    fs.copySync(path.join(tempDir, './dist/'), path.join(cwd, './dist/'), {
+    fs.removeSync(path.join(tempDir, './build/index.html'));
+    fs.copySync(path.join(tempDir, './build/'), path.join(cwd, './build/'), {
       overwrite: true,
     });
     fs.removeSync(tempDir);

@@ -1,4 +1,4 @@
-export const delay = function(proxy, timer) {
+function delay(proxy, timer) {
   let mockApi = {};
   Object.keys(proxy).forEach(function(key) {
     let result = proxy[key].$body || proxy[key];
@@ -26,8 +26,9 @@ export const delay = function(proxy, timer) {
   });
   mockApi.__mockData = proxy;
   return mockApi;
-};
-
-export default function(mockData) {
-  return delay(mockData, 0);
 }
+
+module.delay = delay;
+module.exports = function(mockData) {
+  return delay(mockData, 0);
+};

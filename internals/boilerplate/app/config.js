@@ -1,5 +1,4 @@
 export default {
-  port: "static",
+  port: 'static',
   isStatic: true,
-}
-  
+};

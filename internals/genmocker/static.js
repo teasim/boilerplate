@@ -127,7 +127,7 @@ export default function request(url, params = {}) {
     const hasCNAME = fs.existsSync(`${cwd}/CNAME`);
 
     const shellStr = hasCNAME
-      ? 'npm run build && cp CNAME dist'
+      ? 'npm run build && cp CNAME build'
       : 'npm run build';
 
     console.log(chalk.green('building...'));
@@ -136,9 +136,9 @@ export default function request(url, params = {}) {
         const ga = fs.readJSONSync(`${cwd}/.ga`);
         if (ga) {
           const tpl = gaTpl(ga.code);
-          let html = fs.readFileSync(`${cwd}/dist/index.html`, 'utf8');
+          let html = fs.readFileSync(`${cwd}/build/index.html`, 'utf8');
           html = html.replace('<body>', `<body>${tpl}`);
-          fs.writeFileSync(`${cwd}/dist/index.html`, html, 'utf8');
+          fs.writeFileSync(`${cwd}/build/index.html`, html, 'utf8');
         }
       } catch (e) {
         throw new Error(e);

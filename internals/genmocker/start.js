@@ -33,7 +33,7 @@ module.exports = function(args) {
   }
 
   // 1. 创建临时文件夹
-  const tempDir = path.join(cwd, './mockers-static');
+  const tempDir = path.join(cwd, './mockers-docs');
   const boilerplateDir = path.join(__dirname, '../boilerplate');
 
   process.on('exit', () => {});
@@ -53,11 +53,10 @@ module.exports = function(args) {
   // 4. package.json
   const pkg = port => `{
   "name": "mockers-api-docs-boilerplate",
-  "port": "8080",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=development babel-node ../node_modules/teasim-scripts/lib/server",
-    "build": "cross-env NODE_ENV=production webpack --config ../node_modules/teasim-scripts/lib/internals/webpack/webpack.prod.babel.js --color -p --progress --hide-modules"
+    "start": "cross-env NODE_ENV=development babel-node ../server --port ${projectServerPort}",
+    "build": "cross-env NODE_ENV=production webpack --config ../internals/webpack/webpack.prod.babel.js --color -p --progress --hide-modules"
   },
   "dependencies": {},
   "devDependencies": {}
@@ -68,21 +67,23 @@ module.exports = function(args) {
 
     // 3. 建立变量文件
     const configContent = `
-  module.exports = {
-    port: "${projectServerPort}",
-    docPort: "${port}",
-    isStatic: ${isStatic},
-  }
-  `;
+module.exports = {
+  port: "${projectServerPort}",
+  docPort: "${projectServerPort}",
+  isStatic: ${isStatic},
+}
+    `;
 
-    fs.writeFileSync(path.join(tempDir, './config.js'), configContent, 'utf-8');
+    fs.writeFileSync(
+      path.join(tempDir, './app/config.js'),
+      configContent,
+      'utf-8',
+    );
 
     if (projectServerPort) {
       const mockjsContent = `
-module.exports = {
-  'GET /api/*': 'http://localhost:${projectServerPort}/',
-  'POST /api/*': 'http://localhost:${projectServerPort}/'
-};
+const mockers = require('../../mockers/index');
+module.exports = mockers;
   `;
       fs.writeFileSync(
         path.join(tempDir, './mockers/index.js'),
@@ -92,7 +93,7 @@ module.exports = {
     }
 
     // 5. 启动
-    process.chdir('mockers-static');
+    process.chdir('mockers-docs');
     shelljs.ln('-sf', '../node_modules', 'node_modules');
     shelljs.exec('npm start', (code, stdout, stderr) => {
       if (err) {

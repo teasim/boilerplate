@@ -2,9 +2,9 @@
 
 const program = require('commander');
 
-const start = require('../lib/start');
-const build = require('../lib/build');
-const staticFunc = require('../lib/static');
+const start = require('../internals/genmocker/start');
+const build = require('../internals/genmocker/build');
+const staticFunc = require('../internals/genmocker/static');
 const pkg = require('../package.json');
 
 program.version(pkg.version)

@@ -1,5 +1,5 @@
 const fackers = require('teasim-fackers').default;
-const mockers = require('teasim-mockers').default;
+const mockers = require('../internals/genmocker/index');
 const { getProfileBasicData, getProfileAdvancedData } = require('./profile');
 
 const proxy = {
