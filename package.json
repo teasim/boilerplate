@@ -24,6 +24,10 @@
 		"lint:style": "stylelint-config-prettier-check app/**/*.{css,less}",
 		"test": "NODE_ENV=test jest"
 	},
+	"babel": {
+		"presets": ["habitual"],
+		"minified": true
+	},
 	"jest": {
 		"verbose": true,
 		"moduleFileExtensions": ["js", "jsx"],
@@ -86,8 +90,6 @@
 		"babel-core": "^7.0.0-bridge",
 		"babel-eslint": "^10.0.1",
 		"babel-jest": "^23.6.0",
-		"babel-loader": "^8.0.4",
-		"babel-plugin-import": "^1.9.1",
 		"babel-preset-habitual": "^0.0.7",
 		"cross-env": "^5.2.0",
 		"enzyme": "^3.6.0",
@@ -99,12 +101,6 @@
 		"jest-cli": "^23.6.0",
 		"jest-environment-enzyme": "^6.1.2",
 		"jest-enzyme": "^6.1.2",
-		"postcss": "^7.0.5",
-		"postcss-cli": "^6.0.0",
-		"postcss-flexbugs-fixes": "^4.1.0",
-		"postcss-less": "^3.0.2",
-		"postcss-loader": "^3.0.0",
-		"postcss-safe-parser": "^4.0.1",
 		"prettier": "1.14.3",
 		"prettier-eslint": "^8.8.2",
 		"prettier-eslint-cli": "^4.7.1",
@@ -115,11 +111,9 @@
 		"teasim-fackers": "^5.0.5-0.4",
 		"teasim-mockers": "^5.0.5-0.4",
 		"teasim-samples": "^5.0.5-0",
-		"teasim-scripts": "^5.0.5-0.2"
+		"teasim-scripts": "^5.0.5-0.6"
 	},
 	"dependencies": {
-		"core-js": "^2.5.6",
-		"eventsource-polyfill": "^0.9.6",
 		"immutable": "^3.8.2",
 		"intl": "^1.2.5",
 		"isomorphic-fetch": "^2.2.1",
