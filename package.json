@@ -8,7 +8,7 @@
 	"scripts": {
 		"preinstall": "node ./scripts/npmcheckversion.js",
 		"postinstall": "npm run build:dll",
-		"start": "cross-env NODE_ENV=development babel-node ./node_modules/teasim-scripts/lib/server",
+		"start": "cross-env NODE_ENV=development babel-node ./node_modules/teasim-scripts/server",
 		"start:sample": "start-sample -p 6060",
 		"start:mocker": "setmockers start 3030",
 		"prebuild": "rimraf ./build",
@@ -16,7 +16,7 @@
 		"build:dll": "node ./node_modules/teasim-scripts/lib/scripts/dependencies.js",
 		"build:sample": "build-sample",
 		"build:mocker": "setmockers build 3030",
-		"build:site": "setmockers static",
+		"build:static": "setmockers static",
 		"sample": "npm run start:sample",
 		"mocker": "npm run start:mocker",
 		"lint": "npm run lint:js && npm run lint:style",
