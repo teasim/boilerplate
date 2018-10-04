@@ -151,10 +151,10 @@
 		"style-loader": "^0.23.0",
 		"stylelint": "^9.6.0",
 		"stylelint-config-prettier": "^4.0.0",
-		"teasim-fackers": "^5.0.4-22",
-		"teasim-mockers": "^5.0.4-22",
-		"teasim-samples": "^5.0.4-22",
-		"teasim-scripts": "^5.0.4-22.6",
+		"teasim-fackers": "^5.0.5-0.4",
+		"teasim-mockers": "^5.0.5-0.4",
+		"teasim-samples": "^5.0.5-0",
+		"teasim-scripts": "^5.0.5-0.2",
 		"uglifyjs-webpack-plugin": "^2.0.1",
 		"url-loader": "^1.1.1",
 		"webpack": "^4.20.2",
@@ -185,8 +185,8 @@
 		"redux-logger": "^3.0.6",
 		"redux-saga": "^0.16.0",
 		"reselect": "^4.0.0",
-		"teasim": "^5.0.4-22",
-		"teasim-plugin-loading": "^5.0.4-22"
+		"teasim": "^5.0.5-0",
+		"teasim-plugin-loading": "^5.0.5-0"
 	},
 	"repository": {
 		"type": "git",

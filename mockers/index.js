@@ -1,5 +1,5 @@
-const fackers = require('teasim-fackers').default;
-const mockers = require('teasim-scripts/mockers');
+const fackers = require('teasim-fackers');
+const mockers = require('teasim-mockers');
 const { getProfileBasicData, getProfileAdvancedData } = require('./profile');
 
 const proxy = {
