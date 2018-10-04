@@ -1,4 +1,3 @@
-import { notification } from 'antd';
 import query from '../mockers/index';
 
 const codeMessage = {
@@ -50,7 +49,7 @@ export default function request(url, params = {}) {
             return tempRes;
           }
           const errortext = codeMessage[code];
-          notification.error({
+          console.log({
             message: `请求错误 ${code}: ${url}`,
             description: errortext,
           });

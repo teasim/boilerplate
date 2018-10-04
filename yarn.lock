@@ -3685,8 +3685,8 @@ enzyme-adapter-react-16@^1.5.0:
     react-test-renderer "^16.0.0-0"
 
 enzyme-adapter-utils@^1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/enzyme-adapter-utils/-/enzyme-adapter-utils-1.8.0.tgz#ee9f07250663a985f1f2caaf297720787da559f1"
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/enzyme-adapter-utils/-/enzyme-adapter-utils-1.8.1.tgz#a927d840ce2c14b42892a533aec836809d4e022b"
   dependencies:
     function.prototype.name "^1.1.0"
     object.assign "^4.1.0"
@@ -10937,9 +10937,9 @@ teasim-samples@^5.0.4-22:
     update-notifier "^2.1.0"
     util-deprecate "^1.0.2"
 
-teasim-scripts@^5.0.4-22:
-  version "5.0.4-22"
-  resolved "https://registry.yarnpkg.com/teasim-scripts/-/teasim-scripts-5.0.4-22.tgz#0fc7c30b3243405c0cfdea31926b22c0af0e7d95"
+teasim-scripts@^5.0.4-22.2:
+  version "5.0.4-22.2"
+  resolved "https://registry.yarnpkg.com/teasim-scripts/-/teasim-scripts-5.0.4-22.2.tgz#54b938dd23591847b998c3a6098cd3b05ff61b69"
 
 teasim-skelecton@^5.0.4-22:
   version "5.0.4-22"

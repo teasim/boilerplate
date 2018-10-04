@@ -6,9 +6,37 @@ const chalk = require('chalk');
 const build = require('./build');
 
 const cwd = process.cwd();
+const configPath = `${cwd}/.mockers.docs.js`;
+const config = fs.existsSync(configPath) ? require(configPath) : {};
 
 module.exports = function() {
-  const utilsDir = `${cwd}/app/utils`;
+  const utilsDir = config.requestPath
+    ? path.join(cwd, config.requestPath)
+    : `${cwd}/app/utils`;
+
+  const gaTpl = function(code) {
+    return `<script>
+  // Enable Google Analytics
+  if (!location.port) {
+    /* eslint-disable */
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '${code}', 'auto');
+    ga('send', 'pageview');
+    /* eslint-enable */
+  }
+  </script>
+  `;
+  };
 
   const tplPath = path.join(__dirname, './tpl.js');
   const tpl = fs.readFileSync(tplPath, 'utf-8');
@@ -54,7 +82,11 @@ module.exports = function() {
 
     // 5. npm run build
     console.log(chalk.green('building...'));
-    shelljs.exec(shellStr);
+    shelljs.exec(shellStr, (code, stdout, stderr) => {
+      build('', () => {
+        clean();
+      });
+    });
   } catch (e) {
     throw new Error(e);
   }
