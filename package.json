@@ -25,22 +25,39 @@
 		"test": "NODE_ENV=test jest"
 	},
 	"babel": {
-		"presets": ["habitual"],
+		"presets": [
+			"habitual"
+		],
 		"minified": true
 	},
 	"jest": {
 		"verbose": true,
-		"moduleFileExtensions": ["js", "jsx"],
-		"moduleDirectories": ["node_modules", "app"],
+		"moduleFileExtensions": [
+			"js",
+			"jsx"
+		],
+		"moduleDirectories": [
+			"node_modules",
+			"app"
+		],
 		"moduleNameMapper": {
 			"\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/mocks/fileMock.js",
 			"\\.(css|less|scss)$": "<rootDir>/mocks/styleMock.js"
 		},
-		"testPathIgnorePatterns": ["/node_modules/", "/build/", "/lib/", "/umd/"],
+		"testPathIgnorePatterns": [
+			"/node_modules/",
+			"/build/",
+			"/lib/",
+			"/umd/"
+		],
 		"testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.jsx?$",
 		"testEnvironment": "enzyme",
 		"setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js",
-		"unmockedModulePathPatterns": ["react", "enzyme", "jest-enzyme"],
+		"unmockedModulePathPatterns": [
+			"react",
+			"enzyme",
+			"jest-enzyme"
+		],
 		"transform": {
 			"^.+\\.js$": "babel-jest"
 		}
@@ -49,8 +66,16 @@
 		"rules": {
 			"prettier/prettier": "error"
 		},
-		"plugins": ["babel", "prettier"],
-		"extends": ["plugin:prettier/recommended", "prettier/flowtype", "prettier/react", "prettier/standard"],
+		"plugins": [
+			"babel",
+			"prettier"
+		],
+		"extends": [
+			"plugin:prettier/recommended",
+			"prettier/flowtype",
+			"prettier/react",
+			"prettier/standard"
+		],
 		"parserOptions": {
 			"ecmaVersion": 6,
 			"sourceType": "module",
@@ -71,17 +96,33 @@
 			"at-rule-no-unknown": [
 				true,
 				{
-					"ignoreAtRules": ["extends"]
+					"ignoreAtRules": [
+						"extends"
+					]
 				}
 			],
 			"block-no-empty": null,
-			"unit-whitelist": ["em", "rem", "s"]
+			"unit-whitelist": [
+				"em",
+				"rem",
+				"s"
+			]
 		}
 	},
 	"dllPlugin": {
 		"path": "node_modules/teasim-boilerplate-dlls",
-		"exclude": ["chalk", "compression", "cross-env", "express", "ip", "minimist"],
-		"include": ["core-js", "eventsource-polyfill"]
+		"exclude": [
+			"chalk",
+			"compression",
+			"cross-env",
+			"express",
+			"ip",
+			"minimist"
+		],
+		"include": [
+			"core-js",
+			"eventsource-polyfill"
+		]
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.1.2",
@@ -108,10 +149,10 @@
 		"rimraf": "^2.6.2",
 		"stylelint": "^9.6.0",
 		"stylelint-config-prettier": "^4.0.0",
-		"teasim-fackers": "^5.0.5-0.4",
-		"teasim-mockers": "^5.0.5-0.4",
-		"teasim-samples": "^5.0.5-0",
-		"teasim-scripts": "^5.0.5-0.6"
+		"teasim-fackers": "^5.0.5-1",
+		"teasim-mockers": "^5.0.5-1",
+		"teasim-samples": "^5.0.5-1",
+		"teasim-scripts": "^5.0.5-1"
 	},
 	"dependencies": {
 		"immutable": "^3.8.2",
@@ -131,8 +172,8 @@
 		"redux-logger": "^3.0.6",
 		"redux-saga": "^0.16.0",
 		"reselect": "^4.0.0",
-		"teasim": "^5.0.5-0",
-		"teasim-plugin-loading": "^5.0.5-0"
+		"teasim": "^5.0.5-1",
+		"teasim-plugin-loading": "^5.0.5-1"
 	},
 	"repository": {
 		"type": "git",
