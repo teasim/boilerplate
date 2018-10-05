@@ -1,5 +1,5 @@
 import teasim from 'teasim';
-import createLoading from 'teasim-plugin-loading';
+import createLoading from 'teasim-plugins/loading';
 import './index.less';
 
 /* 1. Initialize */

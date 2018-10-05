@@ -133,8 +133,8 @@
 		"babel-jest": "^23.6.0",
 		"babel-preset-habitual": "^0.0.7",
 		"cross-env": "^5.2.0",
-		"enzyme": "^3.6.0",
-		"enzyme-adapter-react-16": "^1.5.0",
+		"enzyme": "^3.7.0",
+		"enzyme-adapter-react-16": "^1.6.0",
 		"eslint": "^5.6.1",
 		"eslint-config-prettier": "^3.1.0",
 		"eslint-plugin-prettier": "^3.0.0",
@@ -149,10 +149,10 @@
 		"rimraf": "^2.6.2",
 		"stylelint": "^9.6.0",
 		"stylelint-config-prettier": "^4.0.0",
-		"teasim-fackers": "^5.0.5-1",
-		"teasim-mockers": "^5.0.5-1",
-		"teasim-samples": "^5.0.5-1",
-		"teasim-scripts": "^5.0.5-1"
+		"teasim-fackers": "^5.0.5-4",
+		"teasim-mockers": "^5.0.5-4",
+		"teasim-samples": "^5.0.5-4",
+		"teasim-scripts": "^5.0.5-4"
 	},
 	"dependencies": {
 		"immutable": "^3.8.2",
@@ -172,8 +172,8 @@
 		"redux-logger": "^3.0.6",
 		"redux-saga": "^0.16.0",
 		"reselect": "^4.0.0",
-		"teasim": "^5.0.5-1",
-		"teasim-plugin-loading": "^5.0.5-1"
+		"teasim": "^5.0.5-4",
+		"teasim-plugins": "^5.0.5-4"
 	},
 	"repository": {
 		"type": "git",
