@@ -149,10 +149,10 @@
 		"rimraf": "^2.6.2",
 		"stylelint": "^9.6.0",
 		"stylelint-config-prettier": "^4.0.0",
-		"teasim-fackers": "^5.0.5-17",
-		"teasim-mockers": "^5.0.5-17",
-		"teasim-samples": "^5.0.5-17.1",
-		"teasim-scripts": "^5.0.5-17"
+		"teasim-fackers": "^5.0.5-20",
+		"teasim-mockers": "^5.0.5-20",
+		"teasim-samples": "^5.0.5-20",
+		"teasim-scripts": "^5.0.5-20"
 	},
 	"dependencies": {
 		"immutable": "^3.8.2",
@@ -172,8 +172,8 @@
 		"redux-logger": "^3.0.6",
 		"redux-saga": "^0.16.2",
 		"reselect": "^4.0.0",
-		"teasim": "^5.0.5-17.1",
-		"teasim-plugins": "^5.0.5-17"
+		"teasim": "^5.0.5-20",
+		"teasim-plugins": "^5.0.5-20"
 	},
 	"repository": {
 		"type": "git",
