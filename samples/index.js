@@ -1,8 +1,8 @@
 import { configure } from 'teasim-samples';
 import './index.less';
 
-function loadSamples () {
-  require('./Button.js')
+function loadSamples() {
+  require('./import.js');
 }
 
-configure(loadSamples, module)
+configure(loadSamples, module);
