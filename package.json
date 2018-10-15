@@ -135,7 +135,7 @@
 		"cross-env": "^5.2.0",
 		"enzyme": "^3.7.0",
 		"enzyme-adapter-react-16": "^1.6.0",
-		"eslint": "^5.6.1",
+		"eslint": "^5.7.0",
 		"eslint-config-prettier": "^3.1.0",
 		"eslint-plugin-prettier": "^3.0.0",
 		"jest": "^23.6.0",
@@ -149,10 +149,10 @@
 		"rimraf": "^2.6.2",
 		"stylelint": "^9.6.0",
 		"stylelint-config-prettier": "^4.0.0",
-		"teasim-fackers": "^5.0.5-24",
-		"teasim-mockers": "^5.0.5-24",
-		"teasim-samples": "^5.0.5-24",
-		"teasim-scripts": "^5.0.5-24"
+		"teasim-fackers": "^5.0.5-30",
+		"teasim-mockers": "^5.0.5-30",
+		"teasim-samples": "^5.0.5-30",
+		"teasim-scripts": "^5.0.5-30"
 	},
 	"dependencies": {
 		"immutable": "^3.8.2",
@@ -167,13 +167,13 @@
 		"react-router": "^4.2.0",
 		"react-router-dom": "^4.2.2",
 		"react-router-redux": "5.0.0-alpha.9",
-		"redux": "^4.0.0",
+		"redux": "^4.0.1",
 		"redux-immutable": "^4.0.0",
 		"redux-logger": "^3.0.6",
 		"redux-saga": "^0.16.2",
 		"reselect": "^4.0.0",
-		"teasim": "^5.0.5-24",
-		"teasim-plugins": "^5.0.5-24"
+		"teasim": "^5.0.5-30",
+		"teasim-plugins": "^5.0.5-30"
 	},
 	"repository": {
 		"type": "git",
