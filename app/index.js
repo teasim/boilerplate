@@ -1,11 +1,9 @@
-import teasim from 'teasim';
+import teasim from 'teasim/lib/immutable';
 import { createLoading } from 'teasim-plugins';
 import './index.less';
 
 /* 1. Initialize */
-const app = teasim({
-  immutable: true,
-});
+const app = teasim();
 
 /* 2. Plugins */
 app.use(createLoading());
