@@ -12024,12 +12024,13 @@ teasim-stylesheet@^5.1.5:
     react "16.7.0"
     teakit "^0.0.3"
 
-teasim@^5.1.5-7:
-  version "5.1.5-7"
-  resolved "https://registry.yarnpkg.com/teasim/-/teasim-5.1.5-7.tgz#8bf6c902cc31c3f723bf16cab5ed9feaffe57bc6"
-  integrity sha512-QusqszcnNoBTkK94uDde4gfsW0f6py6ChRigdd7qSDsE7JItC5jGmTytH/IG/ErBIhkmbl+aw6+Ja8GFr/5Hhg==
+teasim@^5.1.5-10:
+  version "5.1.5-10"
+  resolved "https://registry.yarnpkg.com/teasim/-/teasim-5.1.5-10.tgz#e3857c544edb7a5b1526df4705040ea4ce38253c"
+  integrity sha512-1aEh7rG9J/9jOolo/GTD13neDsOojB+Ep9789OO2jO/HmJYFE7ROLVcIcugjjsvioNyq54JxJ8S74DCdm/uXfQ==
   dependencies:
     "@babel/polyfill" "^7.0.0"
+    connected-react-router "^6.0.0"
     global "^4.3.2"
     history "^4.7.2"
     immutable "^3.8.2"

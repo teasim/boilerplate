@@ -132,7 +132,7 @@
 		"redux-logger": "^3.0.6",
 		"redux-saga": "^0.16.2",
 		"reselect": "^4.0.0",
-		"teasim": "^5.1.5-7",
+		"teasim": "^5.1.5-10",
 		"teasim-plugins": "^5.1.5"
 	},
 	"repository": {
