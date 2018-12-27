@@ -25,7 +25,15 @@
 		"test": "NODE_ENV=test jest"
 	},
 	"babel": {
-		"presets": ["habitual"],
+		"presets": [
+			[
+				"common",
+				{
+					"modules": "commonjs"
+				}
+			]
+		],
+		"comments": false,
 		"minified": true
 	},
 	"jest": {
@@ -90,7 +98,7 @@
 		"babel-core": "^7.0.0-bridge",
 		"babel-eslint": "^10.0.1",
 		"babel-jest": "^23.6.0",
-		"babel-preset-habitual": "^0.0.10",
+		"babel-preset-common": "^0.0.5",
 		"cross-env": "^5.2.0",
 		"enzyme": "^3.8.0",
 		"enzyme-adapter-react-16": "^1.7.1",
