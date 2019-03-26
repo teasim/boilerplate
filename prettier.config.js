@@ -3,8 +3,8 @@ module.exports = {
   bracketSpacing: true,
   cursorOffset: -1,
   insertPragma: false,
-  jsxBracketSameLine: false,
-  printWidth: 80,
+  jsxBracketSameLine: true,
+  printWidth: 160,
   proseWrap: 'preserve',
   requirePragma: false,
   semi: true,
@@ -12,12 +12,4 @@ module.exports = {
   tabWidth: 2,
   trailingComma: 'all',
   useTabs: false,
-  overrides: [
-    {
-      files: '*.json',
-      options: {
-        printWidth: 200,
-      },
-    },
-  ],
 };

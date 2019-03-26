@@ -24,18 +24,28 @@
 		"lint:style": "stylelint-config-prettier-check app/**/*.{css,less}",
 		"test": "NODE_ENV=test jest"
 	},
-	"babel": {
-		"presets": [
-			[
-				"common",
-				{
-					"modules": "commonjs"
-				}
-			]
-		],
-		"comments": false,
-		"minified": true
-	},
+  "dllPlugin": {
+    "path": "node_modules/teasim-boilerplate-dlls",
+    "exclude": [
+      "chalk",
+      "compression",
+      "cross-env",
+      "express",
+      "ip",
+      "minimist"
+    ],
+    "include": [
+      "core-js",
+      "eventsource-polyfill"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "common"
+    ],
+    "comments": false,
+    "minified": true
+  },
 	"jest": {
 		"verbose": true,
 		"moduleFileExtensions": ["js", "jsx"],
@@ -86,29 +96,24 @@
 			"unit-whitelist": ["em", "rem", "s"]
 		}
 	},
-	"dllPlugin": {
-		"path": "node_modules/teasim-boilerplate-dlls",
-		"exclude": ["chalk", "compression", "cross-env", "express", "ip", "minimist"],
-		"include": ["core-js", "eventsource-polyfill"]
-	},
 	"devDependencies": {
 		"@babel/cli": "^7.2.3",
-		"@babel/core": "^7.3.4",
+		"@babel/core": "^7.4.0",
 		"@babel/node": "^7.2.2",
 		"babel-core": "^7.0.0-bridge",
 		"babel-eslint": "^10.0.1",
-		"babel-jest": "^24.1.0",
-		"babel-preset-common": "^0.0.13",
+		"babel-jest": "^24.5.0",
+		"babel-preset-common": "^0.1.1",
 		"cross-env": "^5.2.0",
 		"enzyme": "^3.9.0",
-		"enzyme-adapter-react-16": "^1.10.0",
-		"eslint": "^5.15.1",
+		"enzyme-adapter-react-16": "^1.11.2",
+		"eslint": "^5.15.3",
 		"eslint-config-prettier": "^4.1.0",
 		"eslint-plugin-prettier": "^3.0.1",
-		"jest": "^24.1.0",
-		"jest-cli": "^24.1.0",
-		"jest-environment-enzyme": "^7.0.1",
-		"jest-enzyme": "^7.0.1",
+		"jest": "^24.5.0",
+		"jest-cli": "^24.5.0",
+		"jest-environment-enzyme": "^7.0.2",
+		"jest-enzyme": "^7.0.2",
 		"prettier": "1.16.4",
 		"prettier-eslint": "^8.8.2",
 		"prettier-eslint-cli": "^4.7.1",
@@ -116,32 +121,32 @@
 		"rimraf": "^2.6.3",
 		"stylelint": "^9.10.1",
 		"stylelint-config-prettier": "^5.0.0",
-		"teasim-fackers": "^6.0.0",
-		"teasim-mockers": "^6.0.0",
-		"teasim-samples": "^6.0.0",
-		"teasim-scripts": "^6.0.0"
+		"teasim-fackers": "^6.0.6",
+		"teasim-mockers": "^6.0.6",
+		"teasim-samples": "^6.0.6",
+		"teasim-scripts": "^6.0.6"
 	},
 	"dependencies": {
-		"connected-react-router": "^6.3.1",
+		"connected-react-router": "^6.3.2",
 		"immutable": "^4.0.0-rc.12",
 		"intl": "^1.2.5",
 		"isomorphic-fetch": "^2.2.1",
 		"moment": "^2.24.0",
 		"prop-types": "^15.7.2",
-		"react": "^16.8.4",
-		"react-dom": "^16.8.4",
+		"react": "^16.8.5",
+		"react-dom": "^16.8.5",
 		"react-intl": "^2.8.0",
 		"react-redux": "^6.0.1",
-		"react-router": "^4.3.1",
-		"react-router-dom": "^4.3.1",
+		"react-router": "^5.0.0",
+		"react-router-dom": "^5.0.0",
 		"react-router-redux": "^5.0.0-alpha.8",
 		"redux": "^4.0.1",
 		"redux-immutable": "^4.0.0",
 		"redux-logger": "^3.0.6",
 		"redux-saga": "^1.0.2",
 		"reselect": "^4.0.0",
-		"teasim": "^6.0.0",
-		"teasim-plugins": "^6.0.0"
+		"teasim": "^6.0.6",
+		"teasim-plugins": "^6.0.6"
 	},
 	"repository": {
 		"type": "git",
